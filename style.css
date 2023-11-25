@@ -1,0 +1,138 @@
+* {
+  /* reset scss */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(118, 237, 21),
+    rgb(118, 237, 21)
+  );
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 8px rgb(143, 0, 143);
+  font-size: 175%;
+  text-align: center;
+  clear: both;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.top-container {
+  background-image: url(./image/nen-hoa-co.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 13%;
+  text-align: center;
+}
+
+.left-container {
+  background-image: url(./image/nen-hoa-muc-luc.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: 100%;
+  padding: 30px;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+}
+
+.menu-item {
+  background-image: url(./image/nen-lien-ket-muc-luc.png);
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 1px #000000;
+  text-align: start;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  padding-left: 5%;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.menu-item:hover {
+  background-image: url(./image/nen-lien-ket-muc-luc-over.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.right-container {
+  background-color: #ffffff;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+}
+
+.bottom-container {
+  display: flex;
+  background-color: rgb(167, 241, 9);
+  text-align: center;
+  padding: 3px;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+  height: 2%;
+}
+
+.footer {
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 75%;
+
+  text-align: center;
+  clear: both;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(118, 237, 21);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}

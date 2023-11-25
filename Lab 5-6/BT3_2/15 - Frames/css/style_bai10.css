@@ -1,0 +1,73 @@
+body {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url(./images/co-vietnam.png) no-repeat center center fixed;
+}
+
+#btnGoToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(207, 38, 38, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    font-size: 20pt;
+    width: 50px;
+    height: 50px;
+}
+#btnGoToTop:hover {
+    background-color: rgb(207, 38, 38, 0.8);
+    cursor: pointer;
+}
+.tieude {
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 5px #0000;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+p.dropcap:first-letter{
+    float: left;
+    color: yellow;
+    text-shadow: 1px 1px 2px red;
+    font: 50pt Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.anhbentrai {
+    float: left;
+    margin-right: 20px;
+}
+.headerChar{
+    float: left;
+}
+.fit-image{
+width: 100%;
+object-fit: cover;
+}
+
+.chuthichhinh {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.anhbenphai {
+    float: right;
+    margin-left: 20px;
+}
+
+.vedautrang {
+    text-align: left;
+}

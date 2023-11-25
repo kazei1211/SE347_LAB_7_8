@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.left-background {
+  width: 70%;
+  height: 100%;
+  background-color: #000000;
+  border-right: 2px solid #fff;
+}
+.right-background {
+  width: 30%;
+  height: 100%;
+  background-color: #fe0000;
+}
+.background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: aqua;
+  flex-direction: column;
+}

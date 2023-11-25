@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-ShopHoaTuoi</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "CustomFont";
+      src: url(./Lab1-2/5-ShopHoaTuoi/fonts/UTMWeddingK&T.ttf);
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #e60073,
+          0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      }
+      to {
+        text-shadow: 0 0 1px #fff, 0 0 10px #ff4da6, 0 0 30px #ff4da6,
+          0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
+          0 0 170px #ff4da6;
+      }
+    }
+    .container {
+      width: 75%;
+      height: auto;
+      margin-top: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title {
+      width: 100%;
+      height: auto;
+      color: white;
+      font-size: 60px;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 3rem;
+      font-family: "CustomFont";
+      font-weight: 700;
+      text-shadow: 1px 1px 7px #e60073, 1px 1px 30px #e60073;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    .listTitle {
+      color: #fff;
+      background-color: #f400a9;
+      font-weight: 700;
+    }
+    .content {
+      width: 45%;
+      height: auto;
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 19px;
+      font-family: sans-serif;
+    }
+    ol {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+      padding-inline-start: 20px;
+      padding-left: 4rem;
+      font-weight: 100;
+    }
+    cite {
+      font-size: 14px;
+      color: #6b3fb2;
+      padding-left: 8%;
+    }
+    .intro {
+      list-style-image: url(./Lab1-2/5-ShopHoaTuoi/hinh/bullet-hoa-tim.png);
+    }
+    .contact {
+      list-style-image: url(./Lab1-2/5-ShopHoaTuoi/hinh/bullet-tron-hong.png);
+    }
+    .background1 {
+      background: url(./Lab1-2/5-ShopHoaTuoi/hinh/binh-hoa.jpg);
+      background-size: 35%;
+      background-repeat: no-repeat;
+      background-position: left center;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: -1;
+      margin: none;
+      padding: none;
+    }
+    .background2 {
+      background: url(./Lab1-2/5-ShopHoaTuoi/hinh/nen-hoa-hong.jpg);
+      background-size: 60%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: -1;
+      margin: none;
+      padding: none;
+    }
+  </style>
+  <body style="height: 100vh">
+    <div class="background">
+      <div class="background1"></div>
+      <div class="background2"></div>
+    </div>
+    <div class="container">
+      <div class="title">Shop Hoa tươi Hạnh Phúc</div>
+      <div class="content">
+        <ol type="1">
+          <li>
+            <span class="listTitle">Giới thiệu</span>
+            <ul>
+              <li class="intro">Thành lập ngày 01/07/2014</li>
+              <li class="intro">Chuyên cung cấp các loại hoa tươi</li>
+              <li class="intro">Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+              <li class="intro">
+                Nhận kết giỏ hoa theo yêu cầu của khách hàng
+              </li>
+            </ul>
+          </li>
+          <hr style="margin-left: -17px" />
+          <li>
+            <span class="listTitle">Liên hệ</span>
+            <ul>
+              <li class="contact">
+                Địa chỉ:
+                <span style="font-weight: 700"
+                  >245 Nguyễn Văn Cừ Q5, TP.HCM</span
+                >
+              </li>
+              <li class="contact">Điện thoại: 84-08-8351056</li>
+              <li class="contact">Fax:(08)62619416 (Ext. 115)</li>
+            </ul>
+          </li>
+        </ol>
+        <cite
+          >©️ Copyright: <span style="color: #f400a9">Công Ty Tin Hoc ABC</span>
+        </cite>
+      </div>
+    </div>
+  </body>
+</html>

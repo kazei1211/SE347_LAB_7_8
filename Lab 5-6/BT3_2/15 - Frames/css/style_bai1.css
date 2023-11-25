@@ -1,0 +1,19 @@
+div.text
+{
+    text-align: center;
+}
+h1
+{
+    color: #EF25AF;
+    background-color: #FAD6F9; 
+    padding: 10px;
+}
+div.background
+{
+    background-color: #FAF8CC; 
+    padding: 1px; 
+    background-image: url(./images/hoa_hong_tang_me.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

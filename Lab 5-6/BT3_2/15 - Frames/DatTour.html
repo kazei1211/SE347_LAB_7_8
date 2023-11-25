@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="./css/style_bai13.css" />
+
+    <script>
+
+        function inThongBao() {
+            alert("Bạn đã đăng ký thành công. Thông tin đăng ký của bạn như sau: \n ========================================\nHọ tên: "
+                + txtfullname.value + "\nĐịa chỉ: " + txtDiaChi.value + "\nĐiện thoại: " + txtDienThoai.value + "\nLoại khách: " + (chkLoaiKhach.checked ? "Việt Nam" : "Nước ngoài")
+                + "\nChọn tour: " + selChonTour.options[selChonTour.selectedIndex].text + "\nPhương tiện: " + (maybay.selected ? "Máy bay" : xedulich.selected ? "Xe du lịch" : "Tự túc")
+                + "\nSố lượng khách đoàn: " + nguoilon.value + " người lớn - " + treem.value + " trẻ em" + "\nGhi chú thêm: " + txtGhiChu.value
+                + "\n========================================"
+            )
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">ĐĂNG KÝ DU LỊCH</h1>
+    <form id="registration-form" onSubmit="inThongBao();">
+        <table>
+            <tr>
+                <td>
+                    Họ tên
+                </td>
+                <td>
+                    <input type="text" style="width: 70%;" type="text" id="txtfullname" name="txtfullname" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Địa chỉ
+                </td>
+                <td>
+                    <textarea rows="5" id="txtDiaChi" name="address" required></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Điện thoại
+                </td>
+                <td>
+                    <input type="tel" id="txtDienThoai" name="phone" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Khách Việt Nam
+                </td>
+                <td>
+                    <input type="checkbox" id="chkLoaiKhach" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Chọn tour
+                </td>
+                <td>
+                    <select name="SelChonTour" id="selChonTour" style="width: 70%;">
+
+                        <optgroup label="Miền Bắc">
+                            <option value="hanoi_halong_sapa">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="hanoi_chuahuong_ninhbinh">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="hanoi_catba_tuanchau">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+
+                        <optgroup label="Miền Trung">
+                            <option value="hue_bachma_danang">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="nhatrang_dalat">Nha Trang - Đà Lạt</option>
+                            <option value="buonmethuoc_gialai_kontum">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+
+
+                        <optgroup label="Miền Nam">
+                            <option value="tphcm_cantho_camau">TpHCM - Cần Thơ - Cà Mau</option>
+                            <option value="phuquoc_condao">Phú Quốc - Côn Đảo</option>
+
+                        </optgroup>
+
+
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <form>
+                        <input type="radio" name="verhical" value="Máy bay" id="maybay" required />
+                        <label for="maybay">Máy bay</label>
+
+                        <input type="radio" name="verhical" value="Xe du lịch" id="xedulich" required />
+                        <label for="xedulich">Xe du lịch</label>
+
+                        <input type="radio" name="verhical" value="Tự túc" id="xedulich" required />
+                        <label for="tutuc">Tự túc</label>
+
+
+                    </form>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        <label for="nguoilon">Người lớn</label>
+                        <input type="number" value="1" id="nguoilon" class="text_soluongdoankhach" />
+
+                        <label for="treem">Trẻ em</label>
+                        <input type="number" value="1" id="treem" class="text_soluongdoankhach" />
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Ghi chú thêm
+                </td>
+
+                <td>
+                    <textarea id="txtGhiChu" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="align_center">
+                    <button type="submit">Đồng ý</button>
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+
+</html>

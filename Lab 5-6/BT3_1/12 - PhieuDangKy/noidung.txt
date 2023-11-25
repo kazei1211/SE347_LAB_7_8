@@ -1,0 +1,10 @@
+﻿Phiếu đăng ký
+Họ tên
+Địa chỉ
+Email
+Điện thoại
+Giới tính Nam Nữ
+Nghề nghiệp Bác sĩ Kỹ sư Giáo viên Khác
+Chọn sản phẩm Kem đánh răng Dầu gội Sữa tắm Bột giặt 
+Dự đoán số người tham gia
+Đăng ký Làm lại

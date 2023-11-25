@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-DinhDangVanBan</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(4, 185, 4);
+      margin-top: 10%;
+    }
+    .background {
+      background: url(./Lab1-2/3-DinhDangVanBan/images/science.jpg) no-repeat
+        center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: -1;
+      margin: none;
+      padding: none;
+    }
+    .container {
+      width: 700px;
+      margin: auto;
+      padding: 10px;
+    }
+    .code-zone {
+      width: 80%;
+      margin-top: 1%;
+      background-color: #cccccc;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  </style>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <h1>Định dạng văn bản</h1>
+      <p>
+        <u><b>Hoá học:</b></u
+        ><em> Nước:</em> <span style="color: red">H</span>
+        <sub style="color: red">2</sub><span style="color: red">O</span>
+        <em>; Axit Sunfuric:</em>
+        <span style="color: red">H</span>
+        <sub style="color: red">2</sub><span style="color: red">SO</span
+        ><sub style="color: red">4</sub>
+      </p>
+      <p>
+        <u><b>Toán học:</b></u
+        ><em> Phương trình bậc 2:</em> <span style="color: red">ax</span>
+        <sup style="color: red">2</sup
+        ><span style="color: red">+ bx + c =0</span>
+      </p>
+      <p>
+        <u><b>Tin học:</b></u
+        ><em> Vòng lặp for: </em>
+      </p>
+      <div class="code-zone">
+        <code style="color: rgb(0, 38, 255)">
+          <p>int tong = 0;</p>
+          <p>for(int i = 1; i &lt= 10; i++)</p>
+          <p style="text-indent: 2rem">tong += i;</p>
+          <p>printf("Tong cac so tu 1 => 10 la: %d\n",tong);</p>
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

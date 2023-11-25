@@ -1,0 +1,47 @@
+h2
+{
+    text-align: center; 
+    color: #F05B24;
+    margin: 5px;
+    border-style: double;
+    border-color: #33F816;
+}
+h3
+{
+    text-align: right;
+    color: white;
+    background-color: #33F816;
+    margin: 5px;
+    padding: 3px;
+}
+mark
+{
+    background-color: #F05B24;
+    font-weight: bold;
+    text-decoration: underline;
+}
+span
+{
+    font-size: xx-large;
+    color: #33F816;
+    font-style: italic;
+    font-weight: bold;
+}
+#p1
+{
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+#img1
+{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+p 
+{
+    font-size: small;
+    margin-left: 5px;
+    margin-right: 5px;
+}

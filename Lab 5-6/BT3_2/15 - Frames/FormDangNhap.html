@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form đăng nhập</title>
+    <link rel="stylesheet" href="./css/style_bai11.css" />
+    <script src="./css/script_bai11.js"></script>
+  </head>
+  <!-- 
+    Tk: minhphan46
+    pass: 123456
+  -->
+  <body>
+    <form method="get" style="margin-top: 150px">
+      <table align="center" cellspacing="2" cellpadding="7">
+        <tr>
+          <td colspan="3" align="center">
+            <h1 style="color: #cc0000">Form đăng nhập</h1>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" align="right">Tên người dùng</td>
+          <td colspan="1">
+            <input
+              class="red-dotted-border"
+              name="txtUsername"
+              type="text"
+              id="txtUsername"
+              maxlength="25"
+              size="25"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" align="right">Mật khẩu</td>
+          <td colspan="1">
+            <input
+              class="red-dotted-border"
+              name="txtPassword"
+              type="password"
+              id="txtPassword"
+              maxlength="25"
+              size="25"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              class="btnLogin"
+              type="button"
+              name="btnLogin"
+              value="Đăng nhập"
+              onclick="loginHandler()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <label id="lblNotify" style="color: #cc0000"> Chào bạn ... </label>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

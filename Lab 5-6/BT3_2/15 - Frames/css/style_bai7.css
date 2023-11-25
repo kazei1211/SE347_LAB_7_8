@@ -1,0 +1,49 @@
+body
+{
+    background-image: url(./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg), url(./images/truong_day_thiet_ke_do_hoa.jpg);
+    background-attachment: fixed;
+    background-position: top left, left 100px bottom;
+    background-repeat: repeat-x, no-repeat;
+    background-size: auto, 50%;
+}
+h1
+{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 8%;
+    color: #1FFF50;
+}
+table
+{
+    text-align: center;
+    font-family: sans-serif;
+    align-content: center;
+    border-width: 5px;
+    border-color: #1FFF50;
+    border-style: solid;
+    width: 40%;
+}
+td
+{
+    border: 2px;
+    border-color: #1FFF50;
+    border-style: solid;
+}
+.title
+{
+    background-color: #1FFF50;
+    color: aliceblue;
+    font-weight: bold;
+}
+.even_number
+{
+    background-color: #A9F8FE;
+}
+.summary
+{
+    background-color: #F98E01;
+}
+.subject_title
+{
+    text-align: left;
+}

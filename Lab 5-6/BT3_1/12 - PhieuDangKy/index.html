@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phiếu đăng ký</title>
+    <style>
+      h1 {
+        font-family: "Arial";
+        text-shadow: 2px 2px 2px #1547ff, -2px -2px 2px #1547ff;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 5px 5px 10px #065eac;
+        border-radius: 15px;
+        padding-bottom: 75px;
+
+        background-image: url("./hinh/khuyen-mai.png");
+        background-size: contain; /* Hiển thị ảnh nền sao cho che kín phần nền */
+        background-position: center bottom; /* Căn ảnh nền ở giữa phía dưới */
+        background-repeat: no-repeat; /* Tắt lặp lại ảnh nền */
+      }
+
+      textarea,
+      select,
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"] {
+        /* width: 100%; */
+        padding: 8px;
+        border: 1px dotted #0075ff;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: rgb(0, 117, 255, 0.25);
+      }
+
+      label {
+        font-weight: bold;
+        color: #065eac;
+      }
+      input[type="radio"]:checked {
+        /* Set checked color */
+        accent-color: #0075ff;
+      }
+
+      table {
+        width: 100%;
+        border: none; /* Tắt viền cho bảng */
+        border-collapse: collapse;
+      }
+
+      th {
+        color: #065eac;
+        text-align: right;
+        padding: 10px;
+        width: 45%;
+      }
+
+      td {
+        padding: 8px;
+        width: 55%;
+      }
+
+      .button-group {
+        text-align: center;
+      }
+      button {
+        background: linear-gradient(
+          to top,
+          #02a2c7,
+          #1a5bce
+        ); /* Gradient màu nền từ #007bff đến #0056b3 */
+        color: #fff;
+        font-weight: bold;
+        padding: 5px 5px; /* Điều chỉnh lề trái và lề phải để tạo hiệu ứng trải dài */
+        border: 2.5px solid #04caff; /* Đặt viền màu #04CAFF */
+        border-radius: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Phiếu đăng ký</h1>
+    <div class="container">
+      <form id="registration-form" onsubmit="submitForm()">
+        <table>
+          <tr>
+            <th>Họ tên:</th>
+            <td>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                style="width: 290px"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Địa chỉ:</th>
+            <td>
+              <textarea
+                id="address"
+                name="address"
+                style="height: 100px; width: 300px"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <th>Điện thoại:</th>
+            <td><input type="tel" id="phone" name="phone" required /></td>
+          </tr>
+          <tr>
+            <th>Giới tính:</th>
+            <td>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="male">Nam</label>
+
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />
+              <label for="female">Nữ</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Nghề nghiệp:</th>
+            <td>
+              <select id="occupation" name="occupation" required>
+                <option value="student">Sinh viên</option>
+                <option value="employee">Nhân viên</option>
+                <option value="self-employed">Tự doanh</option>
+                <option value="other">Khác</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Chọn sản phẩm:</th>
+            <td>
+              <select id="products" name="products" multiple required>
+                <option value="product1">Kem đánh răng</option>
+                <option value="product2">Dầu gội</option>
+                <option value="product3">Sửa tắm</option>
+                <option value="product4">Bột giặt</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Dự đoán số người tham gia:</th>
+            <td>
+              <input
+                type="number"
+                id="participants"
+                name="participants"
+                style="width: 200px"
+                min="0"
+                max="1000"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2" style="text-align: center">
+              <button type="submit">Đăng ký</button>
+              <button type="button" class="clear-button" onclick="clearForm()">
+                Làm lại
+              </button>
+            </th>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        // Lấy tham chiếu đến phần tử select
+        var selectElement = document.getElementById("products");
+
+        // Lấy danh sách các option đã chọn
+        var selectedOptions = [];
+        for (var i = 0; i < selectElement.options.length; i++) {
+          if (selectElement.options[i].selected) {
+            selectedOptions.push(selectElement.options[i].text);
+          }
+        }
+        let products = "";
+        // Hiển thị thông tin về các sản phẩm đã chọn
+        if (selectedOptions.length > 0) {
+          products = selectedOptions.join(", ");
+        } else {
+          products = "Không có sản phẩm nào được chọn";
+        }
+
+        alert(
+          "Họ tên: " +
+            document.getElementById("fullname").value +
+            "\n" +
+            "Địa chỉ: " +
+            document.getElementById("address").value +
+            "\n" +
+            "Email: " +
+            document.getElementById("email").value +
+            "\n" +
+            "Điện thoại: " +
+            document.getElementById("phone").value +
+            "\n" +
+            "Giới tính: " +
+            (document.getElementById("male").checked ? "Nam" : "Nữ") +
+            "\n" +
+            "Nghề nghiệp: " +
+            document.getElementById("occupation").value +
+            "\n" +
+            "Sản phẩm: " +
+            products +
+            "\n" +
+            "Dự đoán số người tham gia: " +
+            document.getElementById("participants").value
+        );
+      }
+      function clearForm() {
+        document.getElementById("registration-form").reset();
+      }
+    </script>
+  </body>
+</html>
